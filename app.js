@@ -1,4 +1,3 @@
-
 const JWT = require('jsonwebtoken')
 const express = require('express');
 const app = express();
@@ -10,12 +9,9 @@ const { PrismaClient } = require('@prisma/client');
 const dotenv = require('dotenv');
 const session = require('express-session');
 const { check, validationResult } = require('express-validator');
-
 const prisma = new PrismaClient()
 app.use(express.json());
 dotenv.config(); // Load environment variables from .env file
-
-
 const router = express.Router();
 
 
